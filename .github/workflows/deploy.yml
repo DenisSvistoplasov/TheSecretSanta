@@ -39,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: the-secret-santa/dist
+          path: dist
 
   deploy:
     needs: build
