@@ -1,27 +1,18 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Profile } from './pages/Profile';
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <h1>The Secret Santa</h1>
-        <h2>Ho-ho-ho</h2>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR!!!
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/profile' element={<Profile/>} />
+      </Routes>
+    </HashRouter>
   )
 }
 
