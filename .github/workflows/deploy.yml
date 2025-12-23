@@ -29,11 +29,9 @@ jobs:
           cache: npm
 
       - name: Install deps
-        working-directory: the-secret-santa
         run: npm ci
 
       - name: Build
-        working-directory: the-secret-santa
         run: npm run build
 
       - name: Upload artifact
