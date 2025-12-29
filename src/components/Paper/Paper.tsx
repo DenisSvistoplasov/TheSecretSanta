@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from 'react';
-import './paper.css';
+import './Paper.css';
 
 export const Paper: FC<{ children: ReactNode; className?: string }> = ({
   children,
