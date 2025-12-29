@@ -1,0 +1,27 @@
+.paper{
+  box-sizing: border-box;
+  position: relative;
+  width: 600px;
+  padding: 19% 0;
+}
+
+.paper::before, .paper::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  aspect-ratio: 4.6;
+  background: url('../../assets/scroll.webp') top center / 100% auto no-repeat;
+  z-index: -1;
+}
+
+.paper::after{
+  top: unset;
+  bottom: 0;
+  background-position: bottom center;
+}
+
+.paper__inner{
+  padding: 0 18.37%;
+  background: #FCF7B2 content-box;
+}

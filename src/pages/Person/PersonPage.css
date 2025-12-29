@@ -1,0 +1,19 @@
+.person-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.target{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  aspect-ratio: 1;
+  padding: 50px;
+  font-size: 20px;
+  line-height: 2;
+  background: url('../../assets/target.svg') center / 400px;
+}

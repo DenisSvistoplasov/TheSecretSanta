@@ -1,11 +1,7 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import './style/colors.css';
 
+:root {
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,25 +10,68 @@
 }
 
 a {
-  font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 20px;
   min-height: 100vh;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--color-white);
+  word-break: break-word;
+
+
+  background:
+    url('./assets/santa.webp') bottom right / 32% auto no-repeat,
+
+    url('./assets/snowflake.svg') 12.5% 82% / 2% auto no-repeat, url('./assets/snowflake.svg') 81% 2.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 22% -1% / 2% auto no-repeat, url('./assets/snowflake.svg') 94.5% 11% / 2% auto no-repeat, url('./assets/snowflake.svg') 61.5% 1% / 2% auto no-repeat, url('./assets/snowflake.svg') 24.5% 69.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 12% 90% / 2% auto no-repeat, url('./assets/snowflake.svg') 65.5% 71% / 2% auto no-repeat, url('./assets/snowflake.svg') 6.5% 87% / 2% auto no-repeat, url('./assets/snowflake.svg') 43% 82.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 82% 59% / 2% auto no-repeat, url('./assets/snowflake.svg') 23.5% 54.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 80.5% 76% / 2% auto no-repeat, url('./assets/snowflake.svg') 62.5% 11.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 39% 82% / 2% auto no-repeat, url('./assets/snowflake.svg') 8% 4.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 66.5% 98.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 70% 27.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 89.5% 35% / 2% auto no-repeat, url('./assets/snowflake.svg') 99.5% 47% / 2% auto no-repeat, url('./assets/snowflake.svg') 92.5% 85.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 25% 97.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 5.5% 65% / 2% auto no-repeat, url('./assets/snowflake.svg') 95% 94% / 2% auto no-repeat, url('./assets/snowflake.svg') 4% 84% / 2% auto no-repeat, url('./assets/snowflake.svg') 83.5% 52.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 69% 47% / 2% auto no-repeat, url('./assets/snowflake.svg') 18.5% 62.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 59% 86% / 2% auto no-repeat, url('./assets/snowflake.svg') 15.5% 7% / 2% auto no-repeat, url('./assets/snowflake.svg') 14.5% 42% / 2% auto no-repeat, url('./assets/snowflake.svg') 5.5% 85% / 2% auto no-repeat, url('./assets/snowflake.svg') 66% 5.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 90.5% 96.5% / 2% auto no-repeat, url('./assets/snowflake.svg') -0.5% 55.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 78% 0.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 74.5% 82.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 13% 72% / 2% auto no-repeat, url('./assets/snowflake.svg') 31% 95.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 88.5% 13.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 30.5% 12% / 2% auto no-repeat, url('./assets/snowflake.svg') -1% 26% / 2% auto no-repeat, url('./assets/snowflake.svg') 71.5% 65% / 2% auto no-repeat, url('./assets/snowflake.svg') 33% 44% / 2% auto no-repeat, url('./assets/snowflake.svg') 26.5% 62% / 2% auto no-repeat, url('./assets/snowflake.svg') 35% 87% / 2% auto no-repeat, url('./assets/snowflake.svg') 23% 27.5% / 2% auto no-repeat, url('./assets/snowflake.svg') 99% 22% / 2% auto no-repeat, url('./assets/snowflake.svg') 78% 100% / 2% auto no-repeat, url('./assets/snowflake.svg') 75.5% 70% / 2% auto no-repeat,
+
+    url('./assets/tree.webp') top left / 30% auto no-repeat,
+    url('./assets/boxes.webp') top right / 22% auto no-repeat,
+    url('./assets/box.webp') bottom left / 20% auto no-repeat,
+    var(--color-green);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 4px rgba(0, 20, 0, 0.9);
+}
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 button {
@@ -42,13 +81,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  color: inherit;
+  background-color: var(--color-red);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  background-color: var(--color-red2);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,9 +101,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

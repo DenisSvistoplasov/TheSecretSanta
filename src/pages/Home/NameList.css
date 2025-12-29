@@ -1,0 +1,39 @@
+.name-list{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 10px;
+}
+
+.name-list__item{
+  display: flex;
+  align-items: center;
+}
+
+.name-list__input{
+  background-color: #fff;
+  color: var(--color-red);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.name-list__add_btn, .name-list__delete_btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  margin-left: 5px;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.name-list__add_btn{
+  margin: 0;
+  background-color: var(--color-green);
+}
+
+.name-list__add_btn:hover{
+  margin: 0;
+  background-color: var(--color-darkgreen);
+}
